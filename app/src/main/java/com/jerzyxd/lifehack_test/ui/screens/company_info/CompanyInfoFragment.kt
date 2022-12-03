@@ -3,8 +3,6 @@ package com.jerzyxd.lifehack_test.ui.screens.company_info
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.text.Html
-import android.util.Log
 import android.view.View
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.bumptech.glide.Glide
@@ -13,7 +11,6 @@ import com.jerzyxd.lifehack_test.R
 import com.jerzyxd.lifehack_test.domain.models.CompanyInfoModel
 import kotlinx.android.synthetic.main.fragment_company_info.*
 import online.jutter.supersld.common.base.BaseFragment
-import online.jutter.supersld.extensions.addSystemBottomPadding
 
 class CompanyInfoFragment(val id: String): BaseFragment(R.layout.fragment_company_info), CompanyInfoView {
 

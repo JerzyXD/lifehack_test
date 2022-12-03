@@ -5,9 +5,6 @@ import com.jerzyxd.lifehack_test.domain.di.provideDomainModules
 import org.koin.dsl.module
 
 fun appModule() = module {
-//    provideDataFlow()
-//    provideControllers()
-//    provideConfigModules()
     provideDomainModules()
     provideNetModules(BASE_URL)
 }
