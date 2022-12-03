@@ -21,7 +21,7 @@ class CompaniesFragment: BaseFragment(R.layout.fragment_companies), CompaniesVie
         super.onViewCreated(view, savedInstanceState)
 
         presenter.getCompanies()
-
+        recycleView.addSystemTopPadding()
     }
 
     override fun onBackPressed() {
@@ -30,8 +30,7 @@ class CompaniesFragment: BaseFragment(R.layout.fragment_companies), CompaniesVie
 
     override fun showCompanies(list: List<CompanyModel>) {
         with(recycleView) {
-            addSystemTopPadding()
-            adapter = CompaniesAdapter(list, requireContext())
+            adapter = CompaniesAdapter(list, requireContext()) {presenter.onCompany(it)}
             layoutManager = LinearLayoutManager(context)
         }
     }

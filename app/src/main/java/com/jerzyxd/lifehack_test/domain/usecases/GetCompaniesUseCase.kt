@@ -3,7 +3,7 @@ package com.jerzyxd.lifehack_test.domain.usecases
 import com.jerzyxd.lifehack_test.domain.models.CompanyModel
 import com.jerzyxd.lifehack_test.domain.net.CompanyNetRepository
 
-class CompaniesUseCase(
+class GetCompaniesUseCase(
     private val companyNetRepository: CompanyNetRepository
 ) {
 

@@ -10,7 +10,7 @@ class MainActivity : ActivityBase() {
     override fun getStartFragment() = FlowGlobalScreen().fragment
 
     override fun getStatusAndNavigationColor(): Pair<Int, Int> {
-        return Pair(R.color.white, R.color.white)
+        return Pair(R.color.transparent, R.color.transparent)
     }
 
     fun Fragment.getMainActivity() = requireActivity() as MainActivity

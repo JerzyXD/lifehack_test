@@ -18,7 +18,8 @@ import kotlinx.android.synthetic.main.item_company_list.view.*
 
 class CompaniesAdapter(
     private val list: List<CompanyModel>,
-    private val context: Context
+    private val context: Context,
+    private val callback: (String) -> Unit
     ): RecyclerView.Adapter<ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -43,7 +44,7 @@ class CompaniesAdapter(
             companyName.text = companyModel.name
 
             companyCard.setOnClickListener {
-
+                callback(companyModel.id)
             }
         }
     }

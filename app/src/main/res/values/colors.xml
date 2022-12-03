@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorBackDark">#121028</color>
     <color name="colorBorder">#3A3760</color>
+    <color name="transparent">#00000000</color>
 
     <color name="colorTextPrimary">#FFFFFF</color>
     <color name="colorTextSecondary">#8C88B8</color>
