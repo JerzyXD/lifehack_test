@@ -1,0 +1,32 @@
+ext.versions = [
+        // I/O
+        coroutines                : '1.5.2',
+
+        // AndroidX
+        material                  : '1.5.0',
+        constraint_layout         : '2.1.3',
+        preference                : '1.1.1',
+        androidx_core             : '1.7.0',
+        work_manager              : '2.7.1',
+
+        // MVP
+        moxy                      : '1.7.0',
+
+        // Navigation
+        cicerone                  : '5.1.1',
+
+        // Network
+        retrofit                  : '2.7.1',
+        retrofitadapter           : '3.0.0',
+        gson                      : '2.8.6',
+
+        // ServiceLocator
+        koin                      : '2.1.6',
+
+        // Yandex
+        yandex_metric             : '5.0.1',
+        yandex_map                : '4.2.2-lite',
+
+        //Glide
+        glide                     : '4.14.2'
+]
